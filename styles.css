@@ -1,0 +1,22 @@
+body { margin: 0; padding: 0; }
+html, body { height: 100vh; }
+#map { height: 100%; }
+#controls {
+    position: fixed;
+    z-index: 1;
+    top: 5px;
+    left: 5px;
+}
+#gradientbg, #gradient {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+#gradientbg {
+    z-index: 1;
+    background: repeating-conic-gradient(#ccc 0% 25%, white 0% 50%) 50% / 20px 20px;
+}
+#gradient {
+    transition: all 0.3s ease-in-out;
+}
